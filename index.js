@@ -18,7 +18,7 @@ var count = [];
 
 console.log(count)
 function round(){
-  document.querySelector(".round").innerHTML = `Select your round:${roundIn.value}`
+  document.querySelector(".round").innerHTML = `Select your round: ${roundIn.value}`
 }
 
 function boxes(){ 
