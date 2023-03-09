@@ -18,6 +18,7 @@ const roundSubmit2 = document.querySelector(".roundSubmit2");
 const playerName2 = document.querySelector(".nameDisplay2");
 const show2 = document.querySelector(".total2");
 const roundIn2 = document.querySelector(".roundIn2");
+const win = document.querySelector(".winner");
 
 var result = [];
 var result2 = [];
@@ -41,6 +42,7 @@ function boxes(){
   const num2 = roundIn2.value - 1;
   if(num > num2){
     if(count.length > num){
+      resetTable()
       const final = result.reduce((acc, curr)=> acc + curr, 0);
       alert(show.innerHTML = `Game over and score ${final}`)
         }else{
@@ -61,8 +63,7 @@ function boxes(){
        show.innerHTML = `Score: ${final}` 
   }else{
     if(count.length > num2 ){
-      const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
-      alert(show2.innerHTML = `Game over and score ${final2}`)
+      winner()
         }else{
           count.push(1)
           const randomBox = Math.floor(Math.random()*4)
@@ -88,6 +89,7 @@ function boxes(){
       const num2 = roundIn2.value - 1;
       if(num > num2){
         if(count.length > num){
+          resetTable()
           const final = result.reduce((acc, curr)=> acc + curr, 0);
           alert(show.innerHTML = `Game over and score ${final}`)
             }else{
@@ -108,8 +110,7 @@ function boxes(){
            show.innerHTML = `Score: ${final}` 
       }else{
         if(count.length > num2 ){
-          const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
-          alert(show2.innerHTML = `Game over and score ${final2}`)
+          winner()
             }else{
               count.push(1)
               const randomBox = Math.floor(Math.random()*4)
@@ -135,6 +136,7 @@ function boxes(){
           const num2 = roundIn2.value - 1;
           if(num > num2){
             if(count.length > num){
+              resetTable()
               const final = result.reduce((acc, curr)=> acc + curr, 0);
               alert(show.innerHTML = `Game over and score ${final}`)
                 }else{
@@ -155,8 +157,7 @@ function boxes(){
                show.innerHTML = `Score: ${final}` 
           }else{
             if(count.length > num2 ){
-              const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
-              alert(show2.innerHTML = `Game over and score ${final2}`)
+            winner()
                 }else{
                   count.push(1)
                   const randomBox = Math.floor(Math.random()*4)
@@ -182,6 +183,7 @@ function boxes(){
               const num2 = roundIn2.value - 1;
               if(num > num2){
                 if(count.length > num){
+                  resetTable()
                   const final = result.reduce((acc, curr)=> acc + curr, 0);
                   alert(show.innerHTML = `Game over and score ${final}`)
                     }else{
@@ -202,8 +204,7 @@ function boxes(){
                    show.innerHTML = `Score: ${final}` 
               }else{
                 if(count.length > num2 ){
-                  const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
-                  alert(show2.innerHTML = `Game over and score ${final2}`)
+                 winner()
                     }else{
                       count.push(1)
                       const randomBox = Math.floor(Math.random()*4)
@@ -229,6 +230,7 @@ function boxes(){
                   const num2 = roundIn2.value - 1;
                   if(num > num2){
                     if(count.length > num){
+                      resetTable()
                       const final = result.reduce((acc, curr)=> acc + curr, 0);
                       alert(show.innerHTML = `Game over and score ${final}`)
                         }else{
@@ -244,13 +246,12 @@ function boxes(){
                          
                         } 
                        
-                        btn1.disabled = true;
+                        btn5.disabled = true;
                        const final = result.reduce((acc, curr)=> acc + curr, 0);
                        show.innerHTML = `Score: ${final}` 
                   }else{
                     if(count.length > num2 ){
-                      const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
-                      alert(show2.innerHTML = `Game over and score ${final2}`)
+                      winner()
                         }else{
                           count.push(1)
                           const randomBox = Math.floor(Math.random()*4)
@@ -276,6 +277,7 @@ function boxes(){
                       const num2 = roundIn2.value - 1;
                       if(num > num2){
                         if(count.length > num){
+                          resetTable()
                           const final = result.reduce((acc, curr)=> acc + curr, 0);
                           alert(show.innerHTML = `Game over and score ${final}`)
                             }else{
@@ -296,8 +298,7 @@ function boxes(){
                            show.innerHTML = `Score: ${final}` 
                       }else{
                         if(count.length > num2 ){
-                          const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
-                          alert(show2.innerHTML = `Game over and score ${final2}`)
+                          winner()
                             }else{
                               count.push(1)
                               const randomBox = Math.floor(Math.random()*4)
@@ -323,6 +324,7 @@ function boxes(){
                           const num2 = roundIn2.value - 1;
                           if(num > num2){
                             if(count.length > num){
+                              resetTable()
                               const final = result.reduce((acc, curr)=> acc + curr, 0);
                               alert(show.innerHTML = `Game over and score ${final}`)
                                 }else{
@@ -343,8 +345,7 @@ function boxes(){
                                show.innerHTML = `Score: ${final}` 
                           }else{
                             if(count.length > num2 ){
-                              const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
-                              alert(show2.innerHTML = `Game over and score ${final2}`)
+                             winner()
                                 }else{
                                   count.push(1)
                                   const randomBox = Math.floor(Math.random()*4)
@@ -370,6 +371,7 @@ function boxes(){
                               const num2 = roundIn2.value - 1;
                               if(num > num2){
                                 if(count.length > num){
+                                  resetTable()
                                   const final = result.reduce((acc, curr)=> acc + curr, 0);
                                   alert(show.innerHTML = `Game over and score ${final}`)
                                     }else{
@@ -390,8 +392,7 @@ function boxes(){
                                    show.innerHTML = `Score: ${final}` 
                               }else{
                                 if(count.length > num2 ){
-                                  const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
-                                  alert(show2.innerHTML = `Game over and score ${final2}`)
+                                 winner()
                                     }else{
                                       count.push(1)
                                       const randomBox = Math.floor(Math.random()*4)
@@ -417,6 +418,7 @@ function boxes(){
                                   const num2 = roundIn2.value - 1;
                                   if(num > num2){
                                     if(count.length > num){
+                                      resetTable()
                                       const final = result.reduce((acc, curr)=> acc + curr, 0);
                                       alert(show.innerHTML = `Game over and score ${final}`)
                                         }else{
@@ -432,13 +434,13 @@ function boxes(){
                                          
                                         } 
                                        
-                                        btn1.disabled = true;
+                                        btn9.disabled = true;
                                        const final = result.reduce((acc, curr)=> acc + curr, 0);
                                        show.innerHTML = `Score: ${final}` 
                                   }else{
                                     if(count.length > num2 ){
-                                      const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
-                                      alert(show2.innerHTML = `Game over and score ${final2}`)
+                                      winner()
+                                      
                                         }else{
                                           count.push(1)
                                           const randomBox = Math.floor(Math.random()*4)
@@ -496,7 +498,20 @@ function boxes(){
     count.length = 0; 
     
    }
+function winner(){
+  resetTable()
+  if(result.length === result2.length){
+    alert("Game draw")
+  }
 
+  if(result.length > result2.length){
+    alert(win.innerHTML = `Winner: ${nameIn.value}`)
+  }
+
+  if(result2.length > result.length){
+    alert(win.innerHTML = `Winner: ${nameIn2.value}`)
+  }
+}
    const reset = document.querySelector(".reset")
    const dataStore = document.querySelector(".dataStore");
 

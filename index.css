@@ -6,14 +6,12 @@ body{
     flex-direction: column;
 }
 .boxes{
-    display:flex;
-    flex-direction: row;
     gap: 1px;
 }
 
-.reset,.dataStore,#box1,#box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9{
-    width: 10em;
-    height: 5ex;
+#box1,#box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9{
+    width: 100px;
+    height: 50px;
     border: none;
     margin: 5px;
     border-radius: 5px;
@@ -38,7 +36,15 @@ p,.nameIn, .nameIn2, .roundIn, .roundIn2{
 }
 
 
-.reset,.dataStore{
+.reload,.reset,.dataStore{
+    width: 100px;
+    height: 50px;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+   background-color: rgb(188, 101, 101);
+    cursor: pointer;
     color: white;
 }
 
