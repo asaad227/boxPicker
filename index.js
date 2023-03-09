@@ -46,9 +46,9 @@ function boxes(){
   const num2 = roundIn2.value - 1;
   if(num > num2){
     if(count.length > num){
-      resetTable()
+
       const final = result.reduce((acc, curr)=> acc + curr, 0);
-      alert(show.innerHTML = `Game over and score ${final}`)
+      alert(show.innerHTML = `Please reset boxes for player2`)
         }else{
           count.push(1)
           const randomBox = Math.floor(Math.random()*4)
@@ -93,9 +93,9 @@ function boxes(){
       const num2 = roundIn2.value - 1;
       if(num > num2){
         if(count.length > num){
-          resetTable()
+       
           const final = result.reduce((acc, curr)=> acc + curr, 0);
-          alert(show.innerHTML = `Game over and score ${final}`)
+          alert(show.innerHTML = `Please reset boxes for player2`)
             }else{
               count.push(1)
               const randomBox = Math.floor(Math.random()*4)
@@ -140,9 +140,9 @@ function boxes(){
           const num2 = roundIn2.value - 1;
           if(num > num2){
             if(count.length > num){
-              resetTable()
+           
               const final = result.reduce((acc, curr)=> acc + curr, 0);
-              alert(show.innerHTML = `Game over and score ${final}`)
+              alert(show.innerHTML = `Please reset boxes for player2`)
                 }else{
                   count.push(1)
                   const randomBox = Math.floor(Math.random()*4)
@@ -187,9 +187,9 @@ function boxes(){
               const num2 = roundIn2.value - 1;
               if(num > num2){
                 if(count.length > num){
-                  resetTable()
+            
                   const final = result.reduce((acc, curr)=> acc + curr, 0);
-                  alert(show.innerHTML = `Game over and score ${final}`)
+                  alert(show.innerHTML = `Please reset boxes for player2`)
                     }else{
                       count.push(1)
                       const randomBox = Math.floor(Math.random()*4)
@@ -234,9 +234,9 @@ function boxes(){
                   const num2 = roundIn2.value - 1;
                   if(num > num2){
                     if(count.length > num){
-                      resetTable()
+               
                       const final = result.reduce((acc, curr)=> acc + curr, 0);
-                      alert(show.innerHTML = `Game over and score ${final}`)
+                      alert(show.innerHTML = `Please reset boxes for player2`)
                         }else{
                           count.push(1)
                           const randomBox = Math.floor(Math.random()*4)
@@ -281,9 +281,9 @@ function boxes(){
                       const num2 = roundIn2.value - 1;
                       if(num > num2){
                         if(count.length > num){
-                          resetTable()
+                    
                           const final = result.reduce((acc, curr)=> acc + curr, 0);
-                          alert(show.innerHTML = `Game over and score ${final}`)
+                          alert(show.innerHTML = `Please reset boxes for player2`)
                             }else{
                               count.push(1)
                               const randomBox = Math.floor(Math.random()*4)
@@ -328,9 +328,9 @@ function boxes(){
                           const num2 = roundIn2.value - 1;
                           if(num > num2){
                             if(count.length > num){
-                              resetTable()
+                       
                               const final = result.reduce((acc, curr)=> acc + curr, 0);
-                              alert(show.innerHTML = `Game over and score ${final}`)
+                              alert(show.innerHTML = `Please reset boxes for player2`)
                                 }else{
                                   count.push(1)
                                   const randomBox = Math.floor(Math.random()*4)
@@ -375,9 +375,9 @@ function boxes(){
                               const num2 = roundIn2.value - 1;
                               if(num > num2){
                                 if(count.length > num){
-                                  resetTable()
+                               
                                   const final = result.reduce((acc, curr)=> acc + curr, 0);
-                                  alert(show.innerHTML = `Game over and score ${final}`)
+                                  alert(show.innerHTML = `Please reset boxes for player2`)
                                     }else{
                                       count.push(1)
                                       const randomBox = Math.floor(Math.random()*4)
@@ -422,9 +422,9 @@ function boxes(){
                                   const num2 = roundIn2.value - 1;
                                   if(num > num2){
                                     if(count.length > num){
-                                      resetTable()
+                                 
                                       const final = result.reduce((acc, curr)=> acc + curr, 0);
-                                      alert(show.innerHTML = `Game over and score ${final}`)
+                                      alert(show.innerHTML = `Please reset boxes for player2`)
                                         }else{
                                           count.push(1)
                                           const randomBox = Math.floor(Math.random()*4)
