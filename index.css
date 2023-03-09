@@ -4,7 +4,7 @@
     gap: 1px;
 }
 
-.reset,.box1,.box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9{
+.reset,#box1,#box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9{
     width: 10em;
     height: 5ex;
     border: none;
