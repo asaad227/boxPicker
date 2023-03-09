@@ -526,7 +526,7 @@ function winner(){
   player2Name.style.display = "none";
   howMany.style.display = "flex"
   if(result.length === result2.length){
-    alert(win.innerHTML = "Game draw")
+    alert(win.innerHTML = "Winner: Game draw")
   }
 
   if(result.length > result2.length){
@@ -537,12 +537,12 @@ function winner(){
     alert(win.innerHTML = `Winner 🏆: ${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)}`)
   }
 
-  playerName.innerHTML = "Player Name:";
-  playerName2.innerHTML = "Player Name:";
-  document.querySelector(".round").innerHTML = "Select your round:";
-  document.querySelector(".round2").innerHTML = "Select your round:";
-  show.innerHTML = "Score:";
-  document.querySelector(".total2").innerHTML = "Score: ";
+  // playerName.innerHTML = "Player Name:";
+  // playerName2.innerHTML = "Player Name:";
+  // document.querySelector(".round").innerHTML = "Select your round:";
+  // document.querySelector(".round2").innerHTML = "Select your round:";
+  // show.innerHTML = "Score:";
+  // document.querySelector(".total2").innerHTML = "Score: ";
 }
    const reset = document.querySelector(".reset")
    const dataStore = document.querySelector(".dataStore");
