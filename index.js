@@ -19,6 +19,9 @@ const playerName2 = document.querySelector(".nameDisplay2");
 const show2 = document.querySelector(".total2");
 const roundIn2 = document.querySelector(".roundIn2");
 const win = document.querySelector(".win");
+const player2Name = document.querySelector(".player2Name")
+const player1Name = document.querySelector(".player1Name")
+const howMany = document.querySelector(".howMany")
 
 var result = [];
 var result2 = [];
@@ -34,6 +37,7 @@ function round(){
 
 function round2(){
   playerName2.innerHTML = `Player Name: ${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)}`
+  roundIn2.value = `${roundIn.value}`
   document.querySelector(".round2").innerHTML = `Select your round: ${roundIn2.value}`
 }
 
@@ -477,6 +481,16 @@ function boxes(){
    }
 
    function resetTable(){
+    roundIn.style.display = "none";
+    nameIn.style.display = "none";
+    player1Name.style.display = "none";
+    roundSubmit.style.display = "none"
+    // roundIn2.style.display = "flex";
+    nameIn2.style.display = "flex";
+    roundSubmit2.style.display = "flex"
+    player2Name.style.display = "flex";
+    howMany.style.display = "none"
+    
     btn1.style.backgroundColor = `black`
     btn1.disabled = false; 
     btn2.style.backgroundColor = `black`
@@ -496,13 +510,23 @@ function boxes(){
     btn9.style.backgroundColor = `black`
     btn9.disabled = false;
     count.length = 0; 
-    
+
     
    }
 function winner(){
   resetTable()
+  roundIn.style.display = "flex";
+  roundIn.value = ""
+  nameIn.style.display = "flex";
+  nameIn.value = ""
+  player1Name.style.display = "flex";
+  roundSubmit.style.display = "flex"
+  nameIn2.style.display = "none";
+  roundSubmit2.style.display = "none"
+  player2Name.style.display = "none";
+  howMany.style.display = "flex"
   if(result.length === result2.length){
-    alert("Game draw")
+    alert(win.innerHTML = "Game draw")
   }
 
   if(result.length > result2.length){
@@ -512,6 +536,13 @@ function winner(){
   if(result2.length > result.length){
     alert(win.innerHTML = `Winner 🏆: ${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)}`)
   }
+
+  playerName.innerHTML = "Player Name:";
+  playerName2.innerHTML = "Player Name:";
+  document.querySelector(".round").innerHTML = "Select your round:";
+  document.querySelector(".round2").innerHTML = "Select your round:";
+  show.innerHTML = "Score:";
+  document.querySelector(".total2").innerHTML = "Score: ";
 }
    const reset = document.querySelector(".reset")
    const dataStore = document.querySelector(".dataStore");

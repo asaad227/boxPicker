@@ -48,3 +48,10 @@ p,.nameIn, .nameIn2, .roundIn, .roundIn2{
     color: white;
 }
 
+.roundIn2{
+    display: none;
+}
+
+.roundSubmit2, .nameIn2, .player2Name{
+    display: none;
+}
