@@ -13,8 +13,14 @@ const roundIn = document.querySelector(".roundIn");
 const roundSubmit = document.querySelector(".roundSubmit");
 const playerName = document.querySelector(".nameDisplay");
 const nameIn = document.querySelector(".nameIn");
+const nameIn2 = document.querySelector(".nameIn2")
+const roundSubmit2 = document.querySelector(".roundSubmit2");
+const playerName2 = document.querySelector(".nameDisplay2");
+const show2 = document.querySelector(".total2");
+const roundIn2 = document.querySelector(".roundIn2");
 
-var result = []; 
+var result = [];
+var result2 = [];
 var count = [];
 
 
@@ -22,217 +28,484 @@ console.log(count)
 function round(){
   playerName.innerHTML = `Player Name: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}`
   document.querySelector(".round").innerHTML = `Select your round: ${roundIn.value}`
+  
+}
+
+function round2(){
+  playerName2.innerHTML = `Player Name: ${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)}`
+  document.querySelector(".round2").innerHTML = `Select your round: ${roundIn2.value}`
 }
 
 function boxes(){ 
   const num = roundIn.value - 1;
-  console.log(num)
-  if(count.length > num){
-alert(show.innerHTML = `Game over and score ${final}`)
-  }else{
-    count.push(1)
-    const randomBox = Math.floor(Math.random()*4)
-    const randomClass = Math.floor(Math.random()*4)
-    if(randomBox === randomClass){
-     result.push(10)
-     btn1.style.backgroundColor = "green"
-    }else{
-      btn1.style.backgroundColor = "gold"
-    }
-   
-  } 
- 
- const final = result.reduce((acc, curr)=> acc + curr, 0);
- show.innerHTML = `Score: ${final}`                             
-    }
-    function boxes2(){
-      
-      const num = roundIn.value - 1;;
-      console.log(num)
-      if(count.length > num){
-        const score = result.reduce((acc, curr)=> acc + curr, 0)
-        alert(show.innerHTML = `Game over and score ${score}`)
-          }else{ 
-      count.push(1) 
-      const randomBox = Math.floor(Math.random()*4)
-      const randomClass = Math.floor(Math.random()*4)
-      if(randomBox === randomClass){
-        result.push(10)
-       btn2.style.backgroundColor = "green"
-      }else{
-        btn2.style.backgroundColor = "gold"
-      }
-      
-    }
+  const num2 = roundIn2.value - 1;
+  if(num > num2){
+    if(count.length > num){
       const final = result.reduce((acc, curr)=> acc + curr, 0);
-      show.innerHTML = `Score: ${final}`                             
-         }
-
-         function boxes3(){ 
-          const num = roundIn.value - 1;
-  console.log(num)
-  if(count.length > num){
-    const score = result.reduce((acc, curr)=> acc + curr, 0)
-            alert(show.innerHTML = `Game over and score ${final}`)
-              }else{
-          count.push(1) 
+      alert(show.innerHTML = `Game over and score ${final}`)
+        }else{
+          count.push(1)
           const randomBox = Math.floor(Math.random()*4)
           const randomClass = Math.floor(Math.random()*4)
           if(randomBox === randomClass){
-            result.push(10)
-           btn3.style.backgroundColor = "green"
+           result.push(10)
+           btn1.style.backgroundColor = "green"
           }else{
-            btn3.style.backgroundColor = "gold"
+            btn1.style.backgroundColor = "gold"
           }
          
-        }
-          const final = result.reduce((acc, curr)=> acc + curr, 0);
-          show.innerHTML = `Score: ${final}`                             
-             }
+        } 
+       
+        btn1.disabled = true;
+       const final = result.reduce((acc, curr)=> acc + curr, 0);
+       show.innerHTML = `Score: ${final}` 
+  }else{
+    if(count.length > num2 ){
+      const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+      alert(show2.innerHTML = `Game over and score ${final2}`)
+        }else{
+          count.push(1)
+          const randomBox = Math.floor(Math.random()*4)
+          const randomClass = Math.floor(Math.random()*4)
+          if(randomBox === randomClass){
+           result2.push(10)
+           btn1.style.backgroundColor = "green"
+          }else{
+            btn1.style.backgroundColor = "gold"
+          }
+         
+        } 
+       
+        btn1.disabled = true;
+       const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+       show2.innerHTML = `Score: ${final2}` 
+  }
+                              
+    }
 
-             function boxes4(){ 
-              const num = roundIn.value - 1;
-  console.log(num)
-  if(count.length > num){
-    const score = result.reduce((acc, curr)=> acc + curr, 0)
-                alert(show.innerHTML = `Game over and score ${score}`)
-                  }else{
-              count.push(1) 
+    function boxes2(){ 
+      const num = roundIn.value - 1;
+      const num2 = roundIn2.value - 1;
+      if(num > num2){
+        if(count.length > num){
+          const final = result.reduce((acc, curr)=> acc + curr, 0);
+          alert(show.innerHTML = `Game over and score ${final}`)
+            }else{
+              count.push(1)
               const randomBox = Math.floor(Math.random()*4)
               const randomClass = Math.floor(Math.random()*4)
               if(randomBox === randomClass){
-                result.push(10)
-               btn4.style.backgroundColor = "green"
+               result.push(10)
+               btn2.style.backgroundColor = "green"
               }else{
-                btn4.style.backgroundColor = "gold"
+                btn2.style.backgroundColor = "gold"
               }
              
-            }
-              const final = result.reduce((acc, curr)=> acc + curr, 0);
-              show.innerHTML = `Score: ${final}`                             
-                 }
+            } 
+           
+            btn2.disabled = true;
+           const final = result.reduce((acc, curr)=> acc + curr, 0);
+           show.innerHTML = `Score: ${final}` 
+      }else{
+        if(count.length > num2 ){
+          const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+          alert(show2.innerHTML = `Game over and score ${final2}`)
+            }else{
+              count.push(1)
+              const randomBox = Math.floor(Math.random()*4)
+              const randomClass = Math.floor(Math.random()*4)
+              if(randomBox === randomClass){
+               result2.push(10)
+               btn2.style.backgroundColor = "green"
+              }else{
+                btn2.style.backgroundColor = "gold"
+              }
+             
+            } 
+           
+            btn2.disabled = true;
+           const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+           show2.innerHTML = `Score: ${final2}` 
+      }
+                                  
+        }
 
-                 function boxes5(){ 
-                  const num = roundIn.value - 1;
-  console.log(num)
-  if(count.length > num){
-    const score = result.reduce((acc, curr)=> acc + curr, 0)
-                    alert(show.innerHTML = `Game over and score ${score}`)
-                      }else{
-                  count.push(1) 
+        function boxes3(){ 
+          const num = roundIn.value - 1;
+          const num2 = roundIn2.value - 1;
+          if(num > num2){
+            if(count.length > num){
+              const final = result.reduce((acc, curr)=> acc + curr, 0);
+              alert(show.innerHTML = `Game over and score ${final}`)
+                }else{
+                  count.push(1)
                   const randomBox = Math.floor(Math.random()*4)
                   const randomClass = Math.floor(Math.random()*4)
                   if(randomBox === randomClass){
-                    result.push(10)
-                   btn5.style.backgroundColor = "green"
+                   result.push(10)
+                   btn3.style.backgroundColor = "green"
                   }else{
-                    btn5.style.backgroundColor = "gold"
+                    btn3.style.backgroundColor = "gold"
                   }
                  
-                }
-                  const final = result.reduce((acc, curr)=> acc + curr, 0);
-                  show.innerHTML = `Score: ${final}`                             
-                     }
+                } 
+               
+                btn3.disabled = true;
+               const final = result.reduce((acc, curr)=> acc + curr, 0);
+               show.innerHTML = `Score: ${final}` 
+          }else{
+            if(count.length > num2 ){
+              const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+              alert(show2.innerHTML = `Game over and score ${final2}`)
+                }else{
+                  count.push(1)
+                  const randomBox = Math.floor(Math.random()*4)
+                  const randomClass = Math.floor(Math.random()*4)
+                  if(randomBox === randomClass){
+                   result2.push(10)
+                   btn3.style.backgroundColor = "green"
+                  }else{
+                    btn3.style.backgroundColor = "gold"
+                  }
+                 
+                } 
+               
+                btn3.disabled = true;
+               const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+               show2.innerHTML = `Score: ${final2}` 
+          }
+                                      
+            }
 
-                     function boxes6(){
-                      const num = roundIn.value - 1;
-                      console.log(num)
-                      if(count.length > num){
-                        const score = result.reduce((acc, curr)=> acc + curr, 0)
-                        alert(show.innerHTML = `Game over and score ${score}`)
-                          }else{ 
-                      count.push(1) 
+            function boxes4(){ 
+              const num = roundIn.value - 1;
+              const num2 = roundIn2.value - 1;
+              if(num > num2){
+                if(count.length > num){
+                  const final = result.reduce((acc, curr)=> acc + curr, 0);
+                  alert(show.innerHTML = `Game over and score ${final}`)
+                    }else{
+                      count.push(1)
                       const randomBox = Math.floor(Math.random()*4)
                       const randomClass = Math.floor(Math.random()*4)
                       if(randomBox === randomClass){
-                        result.push(10)
-                       btn6.style.backgroundColor = "green"
+                       result.push(10)
+                       btn4.style.backgroundColor = "green"
                       }else{
-                        btn6.style.backgroundColor = "gold"
+                        btn4.style.backgroundColor = "gold"
                       }
-                      
-                    }
-                      const final = result.reduce((acc, curr)=> acc + curr, 0);
-                      show.innerHTML = `Score: ${final}`                             
-                         }
+                     
+                    } 
+                   
+                    btn4.disabled = true;
+                   const final = result.reduce((acc, curr)=> acc + curr, 0);
+                   show.innerHTML = `Score: ${final}` 
+              }else{
+                if(count.length > num2 ){
+                  const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                  alert(show2.innerHTML = `Game over and score ${final2}`)
+                    }else{
+                      count.push(1)
+                      const randomBox = Math.floor(Math.random()*4)
+                      const randomClass = Math.floor(Math.random()*4)
+                      if(randomBox === randomClass){
+                       result2.push(10)
+                       btn4.style.backgroundColor = "green"
+                      }else{
+                        btn4.style.backgroundColor = "gold"
+                      }
+                     
+                    } 
+                   
+                    btn4.disabled = true;
+                   const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                   show2.innerHTML = `Score: ${final2}` 
+              }
+                                          
+                }
 
-                         function boxes7(){
-                          const num = roundIn.value - 1;
-                          console.log(num)
-                          if(count.length > num){
-                            const score = result.reduce((acc, curr)=> acc + curr, 0)
-                            alert(show.innerHTML = `Game over and score ${score}`)
-                              }else{
-                          count.push(1)  
+                function boxes5(){ 
+                  const num = roundIn.value - 1;
+                  const num2 = roundIn2.value - 1;
+                  if(num > num2){
+                    if(count.length > num){
+                      const final = result.reduce((acc, curr)=> acc + curr, 0);
+                      alert(show.innerHTML = `Game over and score ${final}`)
+                        }else{
+                          count.push(1)
                           const randomBox = Math.floor(Math.random()*4)
                           const randomClass = Math.floor(Math.random()*4)
                           if(randomBox === randomClass){
-                            result.push(10)
-                           btn7.style.backgroundColor = "green"
+                           result.push(10)
+                           btn5.style.backgroundColor = "green"
                           }else{
-                            btn7.style.backgroundColor = "gold"
+                            btn5.style.backgroundColor = "gold"
                           }
-                          
-                        }
+                         
+                        } 
+                       
+                        btn1.disabled = true;
+                       const final = result.reduce((acc, curr)=> acc + curr, 0);
+                       show.innerHTML = `Score: ${final}` 
+                  }else{
+                    if(count.length > num2 ){
+                      const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                      alert(show2.innerHTML = `Game over and score ${final2}`)
+                        }else{
+                          count.push(1)
+                          const randomBox = Math.floor(Math.random()*4)
+                          const randomClass = Math.floor(Math.random()*4)
+                          if(randomBox === randomClass){
+                           result2.push(10)
+                           btn5.style.backgroundColor = "green"
+                          }else{
+                            btn5.style.backgroundColor = "gold"
+                          }
+                         
+                        } 
+                       
+                        btn5.disabled = true;
+                       const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                       show2.innerHTML = `Score: ${final2}` 
+                  }
+                                              
+                    }
+
+                    function boxes6(){ 
+                      const num = roundIn.value - 1;
+                      const num2 = roundIn2.value - 1;
+                      if(num > num2){
+                        if(count.length > num){
                           const final = result.reduce((acc, curr)=> acc + curr, 0);
-                          show.innerHTML = `Score: ${final}`                             
-                             }
-                             function boxes8(){
-                              const num = roundIn.value - 1;
-                              console.log(num)
-                              if(count.length > num){
-                                const score = result.reduce((acc, curr)=> acc + curr, 0)
-                                alert(show.innerHTML = `Game over and score ${score}`)
-                                  }else{ 
-                              count.push(1) 
+                          alert(show.innerHTML = `Game over and score ${final}`)
+                            }else{
+                              count.push(1)
                               const randomBox = Math.floor(Math.random()*4)
                               const randomClass = Math.floor(Math.random()*4)
                               if(randomBox === randomClass){
-                                result.push(10)
-                               btn8.style.backgroundColor = "green"
+                               result.push(10)
+                               btn6.style.backgroundColor = "green"
                               }else{
-                                btn8.style.backgroundColor = "gold"
+                                btn6.style.backgroundColor = "gold"
                               }
-                              
-                            }
+                             
+                            } 
+                           
+                            btn6.disabled = true;
+                           const final = result.reduce((acc, curr)=> acc + curr, 0);
+                           show.innerHTML = `Score: ${final}` 
+                      }else{
+                        if(count.length > num2 ){
+                          const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                          alert(show2.innerHTML = `Game over and score ${final2}`)
+                            }else{
+                              count.push(1)
+                              const randomBox = Math.floor(Math.random()*4)
+                              const randomClass = Math.floor(Math.random()*4)
+                              if(randomBox === randomClass){
+                               result2.push(10)
+                               btn6.style.backgroundColor = "green"
+                              }else{
+                                btn6.style.backgroundColor = "gold"
+                              }
+                             
+                            } 
+                           
+                            btn6.disabled = true;
+                           const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                           show2.innerHTML = `Score: ${final2}` 
+                      }
+                                                  
+                        }
+
+                        function boxes7(){ 
+                          const num = roundIn.value - 1;
+                          const num2 = roundIn2.value - 1;
+                          if(num > num2){
+                            if(count.length > num){
                               const final = result.reduce((acc, curr)=> acc + curr, 0);
-                              show.innerHTML = `Score: ${final}`                             
-                                 }
-                                 function boxes9(){ 
-                                  const num = roundIn.value - 1;
-                                  console.log(num)
-                                  if(count.length > num){
-                                    const score = result.reduce((acc, curr)=> acc + curr, 0)
-                                    alert(show.innerHTML = `Game over and score ${score}`)
-                                      }else{
-                                  count.push(1) 
+                              alert(show.innerHTML = `Game over and score ${final}`)
+                                }else{
+                                  count.push(1)
                                   const randomBox = Math.floor(Math.random()*4)
                                   const randomClass = Math.floor(Math.random()*4)
                                   if(randomBox === randomClass){
-                                    result.push(10)
-                                   btn9.style.backgroundColor = "green"
+                                   result.push(10)
+                                   btn7.style.backgroundColor = "green"
                                   }else{
-                                    btn9.style.backgroundColor = "gold"
+                                    btn7.style.backgroundColor = "gold"
                                   }
                                  
-                                }
+                                } 
+                               
+                                btn7.disabled = true;
+                               const final = result.reduce((acc, curr)=> acc + curr, 0);
+                               show.innerHTML = `Score: ${final}` 
+                          }else{
+                            if(count.length > num2 ){
+                              const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                              alert(show2.innerHTML = `Game over and score ${final2}`)
+                                }else{
+                                  count.push(1)
+                                  const randomBox = Math.floor(Math.random()*4)
+                                  const randomClass = Math.floor(Math.random()*4)
+                                  if(randomBox === randomClass){
+                                   result2.push(10)
+                                   btn7.style.backgroundColor = "green"
+                                  }else{
+                                    btn7.style.backgroundColor = "gold"
+                                  }
+                                 
+                                } 
+                               
+                                btn7.disabled = true;
+                               const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                               show2.innerHTML = `Score: ${final2}` 
+                          }
+                                                      
+                            }
+
+                            function boxes8(){ 
+                              const num = roundIn.value - 1;
+                              const num2 = roundIn2.value - 1;
+                              if(num > num2){
+                                if(count.length > num){
                                   const final = result.reduce((acc, curr)=> acc + curr, 0);
-                                  show.innerHTML = `Score: ${final}`                             
-                                     }
+                                  alert(show.innerHTML = `Game over and score ${final}`)
+                                    }else{
+                                      count.push(1)
+                                      const randomBox = Math.floor(Math.random()*4)
+                                      const randomClass = Math.floor(Math.random()*4)
+                                      if(randomBox === randomClass){
+                                       result.push(10)
+                                       btn8.style.backgroundColor = "green"
+                                      }else{
+                                        btn8.style.backgroundColor = "gold"
+                                      }
+                                     
+                                    } 
+                                   
+                                    btn8.disabled = true;
+                                   const final = result.reduce((acc, curr)=> acc + curr, 0);
+                                   show.innerHTML = `Score: ${final}` 
+                              }else{
+                                if(count.length > num2 ){
+                                  const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                                  alert(show2.innerHTML = `Game over and score ${final2}`)
+                                    }else{
+                                      count.push(1)
+                                      const randomBox = Math.floor(Math.random()*4)
+                                      const randomClass = Math.floor(Math.random()*4)
+                                      if(randomBox === randomClass){
+                                       result2.push(10)
+                                       btn8.style.backgroundColor = "green"
+                                      }else{
+                                        btn8.style.backgroundColor = "gold"
+                                      }
+                                     
+                                    } 
+                                   
+                                    btn8.disabled = true;
+                                   const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                                   show2.innerHTML = `Score: ${final2}` 
+                              }
+                                                          
+                                }
+
+                                function boxes9(){ 
+                                  const num = roundIn.value - 1;
+                                  const num2 = roundIn2.value - 1;
+                                  if(num > num2){
+                                    if(count.length > num){
+                                      const final = result.reduce((acc, curr)=> acc + curr, 0);
+                                      alert(show.innerHTML = `Game over and score ${final}`)
+                                        }else{
+                                          count.push(1)
+                                          const randomBox = Math.floor(Math.random()*4)
+                                          const randomClass = Math.floor(Math.random()*4)
+                                          if(randomBox === randomClass){
+                                           result.push(10)
+                                           btn9.style.backgroundColor = "green"
+                                          }else{
+                                            btn9.style.backgroundColor = "gold"
+                                          }
+                                         
+                                        } 
+                                       
+                                        btn1.disabled = true;
+                                       const final = result.reduce((acc, curr)=> acc + curr, 0);
+                                       show.innerHTML = `Score: ${final}` 
+                                  }else{
+                                    if(count.length > num2 ){
+                                      const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                                      alert(show2.innerHTML = `Game over and score ${final2}`)
+                                        }else{
+                                          count.push(1)
+                                          const randomBox = Math.floor(Math.random()*4)
+                                          const randomClass = Math.floor(Math.random()*4)
+                                          if(randomBox === randomClass){
+                                           result2.push(10)
+                                           btn9.style.backgroundColor = "green"
+                                          }else{
+                                            btn9.style.backgroundColor = "gold"
+                                          }
+                                         
+                                        } 
+                                       
+                                        btn9.disabled = true;
+                                       const final2 = result2.reduce((acc, curr)=> acc + curr, 0);
+                                       show2.innerHTML = `Score: ${final2}` 
+                                  }
+                                                              
+                                    }
+ 
    function store(){
     const final = result.reduce((acc, curr)=> acc + curr, 0);
+    const final2 = result.reduce((acc, curr)=> acc + curr, 0);
     const user1 = {
       name: nameIn.value,
       total: final 
     }
     localStorage.setItem("user1", JSON.stringify(user1));
+    const user2 = {
+      name: nameIn2.value,
+      total: final2 
+    }
+    localStorage.setItem("user2", JSON.stringify(user2));
    }
 
+   function resetTable(){
+    btn1.style.backgroundColor = `black`
+    btn1.disabled = false; 
+    btn2.style.backgroundColor = `black`
+    btn2.disabled = false; 
+    btn3.style.backgroundColor = `black`
+    btn3.disabled = false; 
+    btn4.style.backgroundColor = `black`
+    btn4.disabled = false; 
+    btn5.style.backgroundColor = `black`
+    btn5.disabled = false; 
+    btn6.style.backgroundColor = `black`
+    btn6.disabled = false; 
+    btn7.style.backgroundColor = `black`
+    btn7.disabled = false; 
+    btn8.style.backgroundColor = `black`
+    btn8.disabled = false; 
+    btn9.style.backgroundColor = `black`
+    btn9.disabled = false;
+    count.length = 0; 
+    
+   }
+
+   const reset = document.querySelector(".reset")
    const dataStore = document.querySelector(".dataStore");
 
    dataStore.addEventListener("click", store);
+   reset.addEventListener("click", resetTable);
 
 roundSubmit.addEventListener("click", round)
+
+roundSubmit2.addEventListener("click", round2)
 btn1.addEventListener("click", boxes)
 btn2.addEventListener("click", boxes2)
 btn3.addEventListener("click", boxes3)

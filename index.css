@@ -11,7 +11,7 @@ body{
     gap: 1px;
 }
 
-.dataStore,#box1,#box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9{
+.reset,.dataStore,#box1,#box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9{
     width: 10em;
     height: 5ex;
     border: none;
@@ -21,8 +21,24 @@ body{
    background-color: black;
     cursor: pointer;
 }
+.user,.dip{
+    display: flex;
+    flex-direction: row;
+}
 
-.dataStore{
+p,.nameIn, .nameIn2, .roundIn, .roundIn2{
+    margin: 10px;
+}
+.roundSubmit, .roundSubmit2{
+    margin-left: 10px;
+}
+
+.nameDisplay, .nameDisplay2,.round,.total, .round2, .total2{
+    margin: 5px;
+}
+
+
+.reset,.dataStore{
     color: white;
 }
 

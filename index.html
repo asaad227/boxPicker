@@ -11,17 +11,36 @@
     <div class="mainDiv">
     <div>
         <h3>Find the Green box to get point, dont forget to select your round.</h3>
-        <label>
-            <p>Please enter your name:</p>
+        <div class="user">
+            <div>
+            <p>Player1 enter your name:</p>
             <input type="text" class="nameIn"/>
-            <p>How many round would like to play.</p>
+            <p>Player1 choose your round.</p>
             <input type="number" class="roundIn"/>
-        </label>
+            <button type="submit" class="roundSubmit">Submit</button>
+        </div>
+        <div>
+            <p>Player2 enter your name:</p>
+            <input type="text" class="nameIn2"/>
+            <p>Player2 choose your round.</p>
+            <input type="number" class="roundIn2"/>
+            <button type="submit" class="roundSubmit2">Submit</button>
+        </div>
+        </div>
+        <div class="dip">
+        <div>
+            <h4 class="nameDisplay"> Player Name: </h4>
+            <h4 class="round">Select your round: </h4>
+            <h4 class="total">Score: </h4>
+        </div>
+        <div>
+            <h4 class="nameDisplay2"> Player Name: </h4>
+            <h4 class="round2">Select your round: </h4>
+            <h4 class="total2">Score: </h4>
+        </div>
+    </div>
         
-        <button type="submit" class="roundSubmit">Submit</button>
-        <h4 class="nameDisplay"> Player Name: </h4>
-        <h4 class="round">Select your round: </h4>
-        <h4 class="total">Score: </h4>
+        
         
        
     </div>
@@ -41,6 +60,7 @@
         <button id="box9"></button>
     </div>
 <div>
+    <button class="reset">Reset boxes</button>
     <button class="dataStore" >Data Store</button>
 </div>
 </div>
