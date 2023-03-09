@@ -43,7 +43,8 @@ alert(show.innerHTML = `Game over and score ${final}`)
  show.innerHTML = `Score: ${final}`                             
     }
     function boxes2(){
-      const num = roundIn.value - 1;
+      
+      const num = roundIn.value - 1;;
       console.log(num)
       if(count.length > num){
         const score = result.reduce((acc, curr)=> acc + curr, 0)

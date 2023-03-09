@@ -1,7 +1,10 @@
 body{
     background-color: darkgrey;
 }
-
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+}
 .boxes{
     display:flex;
     flex-direction: row;
@@ -22,13 +25,4 @@ body{
 .reset{
     color: white;
 }
-.btn1:focus {
-    outline-color: transparent;
-    outline-style:solid;
-    box-shadow: 0 0 0 4px #5a01a7;
-    transition: 0.7s;
-}
 
-.box1:active{
-   background-color: bisque;
-}
