@@ -219,7 +219,18 @@ alert(show.innerHTML = `Game over and score ${final}`)
                                   const final = result.reduce((acc, curr)=> acc + curr, 0);
                                   show.innerHTML = `Score: ${final}`                             
                                      }
-   
+   function store(){
+    const final = result.reduce((acc, curr)=> acc + curr, 0);
+    const user1 = {
+      name: nameIn.value,
+      total: final 
+    }
+    localStorage.setItem("user1", JSON.stringify(user1));
+   }
+
+   const dataStore = document.querySelector(".dataStore");
+
+   dataStore.addEventListener("click", store);
 
 roundSubmit.addEventListener("click", round)
 btn1.addEventListener("click", boxes)
