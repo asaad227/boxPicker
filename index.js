@@ -20,7 +20,7 @@ var count = [];
 
 console.log(count)
 function round(){
-  playerName.innerHTML = `Player Name: ${nameIn.value}`
+  playerName.innerHTML = `Player Name: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}`
   document.querySelector(".round").innerHTML = `Select your round: ${roundIn.value}`
 }
 
