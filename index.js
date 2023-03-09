@@ -11,6 +11,8 @@ const btn9 = document.querySelector("#box9")
 const show = document.querySelector(".total");
 const roundIn = document.querySelector(".roundIn");
 const roundSubmit = document.querySelector(".roundSubmit");
+const playerName = document.querySelector(".nameDisplay");
+const nameIn = document.querySelector(".nameIn");
 
 var result = []; 
 var count = [];
@@ -18,6 +20,7 @@ var count = [];
 
 console.log(count)
 function round(){
+  playerName.innerHTML = `Player Name: ${nameIn.value}`
   document.querySelector(".round").innerHTML = `Select your round: ${roundIn.value}`
 }
 
