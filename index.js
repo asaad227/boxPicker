@@ -18,7 +18,7 @@ const roundSubmit2 = document.querySelector(".roundSubmit2");
 const playerName2 = document.querySelector(".nameDisplay2");
 const show2 = document.querySelector(".total2");
 const roundIn2 = document.querySelector(".roundIn2");
-const win = document.querySelector(".winner");
+const win = document.querySelector(".win");
 
 var result = [];
 var result2 = [];
@@ -497,6 +497,7 @@ function boxes(){
     btn9.disabled = false;
     count.length = 0; 
     
+    
    }
 function winner(){
   resetTable()
@@ -505,11 +506,11 @@ function winner(){
   }
 
   if(result.length > result2.length){
-    alert(win.innerHTML = `Winner: ${nameIn.value}`)
+    alert(win.innerHTML = `Winner 🏆: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}`)
   }
 
   if(result2.length > result.length){
-    alert(win.innerHTML = `Winner: ${nameIn2.value}`)
+    alert(win.innerHTML = `Winner 🏆: ${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)}`)
   }
 }
    const reset = document.querySelector(".reset")
