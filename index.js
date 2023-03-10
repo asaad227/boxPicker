@@ -514,7 +514,6 @@ function boxes(){
     
    }
 function winner(){
-  resetTable()
   roundIn.style.display = "flex";
   roundIn.value = ""
   nameIn.style.display = "flex";
@@ -525,16 +524,17 @@ function winner(){
   roundSubmit2.style.display = "none"
   player2Name.style.display = "none";
   howMany.style.display = "flex"
-  if(result.length === result2.length){
-    alert(win.innerHTML = "Winner: Game draw")
-  }
 
   if(result.length > result2.length){
     alert(win.innerHTML = `Winner 🏆: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}`)
   }
 
-  if(result2.length > result.length){
+  if(result.length < result2.length){
     alert(win.innerHTML = `Winner 🏆: ${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)}`)
+  }
+
+if(result.length === result2.length){
+    alert(win.innerHTML = "Winner: Game draw")
   }
 
   // playerName.innerHTML = "Player Name:";
