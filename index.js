@@ -537,16 +537,16 @@ if(result.length === result2.length){
     alert(win.innerHTML = "Winner: Game draw")
   }
 
-  // playerName.innerHTML = "Player Name:";
-  // playerName2.innerHTML = "Player Name:";
-  // document.querySelector(".round").innerHTML = "Select your round:";
-  // document.querySelector(".round2").innerHTML = "Select your round:";
-  // show.innerHTML = "Score:";
-  // document.querySelector(".total2").innerHTML = "Score: ";
-}
+  }
 
 function gameReload(){
-location.reload()
+  playerName.innerHTML = "Player Name:";
+  playerName2.innerHTML = "Player Name:";
+  document.querySelector(".round").innerHTML = "Select your round:";
+  document.querySelector(".round2").innerHTML = "Select your round:";
+  show.innerHTML = "Score:";
+  show2.innerHTML =""Score: ";
+  resetTable()
 
 }
    const reset = document.querySelector(".reset")
