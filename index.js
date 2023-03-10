@@ -544,14 +544,20 @@ if(result.length === result2.length){
   // show.innerHTML = "Score:";
   // document.querySelector(".total2").innerHTML = "Score: ";
 }
+
+function gameReload(){
+location.reload()
+
+}
    const reset = document.querySelector(".reset")
    const dataStore = document.querySelector(".dataStore");
+   const reload = document.querySelector(".reload")
 
    dataStore.addEventListener("click", store);
    reset.addEventListener("click", resetTable);
 
 roundSubmit.addEventListener("click", round)
-
+reload.addEventListener("click", gameReload)
 roundSubmit2.addEventListener("click", round2)
 btn1.addEventListener("click", boxes)
 btn2.addEventListener("click", boxes2)
