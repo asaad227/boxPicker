@@ -483,6 +483,9 @@ function boxes(){
 
    function resetTable(){
     const final = result.reduce((acc, curr)=> acc + curr, 0);
+   
+    document.querySelector(".player2Details").style.display = "initial";
+    document.querySelector(".player1Details").style.display = "none";
     document.querySelector(".reset").style.display = "none";
     document.querySelector(".heading").innerHTML =`Find the green box and Player1: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}, score: ${final} to beat. Good luck Player2!!`
     roundIn.style.display = "none";
@@ -492,7 +495,7 @@ function boxes(){
     // roundIn2.style.display = "inline";
 
     nameIn2.style.display = "flex";
-    roundSubmit2.style.display = "flex"
+    roundSubmit2.style.display = "inline"
     player2Name.style.display = "flex";
     howMany.style.display = "none"
     btn1.style.backgroundColor = `black`
@@ -521,7 +524,7 @@ function winner(){
   
   if(result.length > result2.length){
     alert(win.innerHTML = `Winner 🏆: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}`)
-  document.querySelector(".heading").innerHTML =`${nameIn2.value[0].toUpperCase()+nameIn.value.slice(1)} better luck next time!!!`
+  document.querySelector(".heading").innerHTML =`${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)} better luck next time!!!`
   }
 
   if(result.length < result2.length){
@@ -532,7 +535,7 @@ function winner(){
     alert(win.innerHTML = "Winner: Game draw")
     document.querySelector(".heading").innerHTML =`Reload the game and try again!!!`
   }
-
+  win.style.display = "inline"
 }
    const reset = document.querySelector(".reset")
    const dataStore = document.querySelector(".dataStore");
