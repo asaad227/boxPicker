@@ -522,15 +522,18 @@ function winner(){
   if(result.length > result2.length){
     alert(win.innerHTML = `Winner 🏆: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}`)
   document.querySelector(".heading").innerHTML =`${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)} better luck next time!!!`
+  document.querySelector(".endBtn").style.marginTop = "150px"
   }
 
   if(result.length < result2.length){
     alert(win.innerHTML = `Winner 🏆: ${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)}`)
     document.querySelector(".heading").innerHTML =`${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)} better luck next time!!!`
+    document.querySelector(".endBtn").style.marginTop = "150px"
   }
   if(result.length === result2.length){
     alert(win.innerHTML = "Winner: Game draw")
     document.querySelector(".heading").innerHTML =`Reload the game and try again!!!`
+    document.querySelector(".endBtn").style.marginTop = "150px"
   }
   win.style.display = "inline";
   document.querySelector(".user").style.display = "none";

@@ -2,17 +2,24 @@ body{
     background-color: darkgrey;
 }
 .mainDiv{
-    display: block;
-    flex-direction: column;
+    display: initial;
+    position: relative;
+  
 }
 
 .mainDiv2{
+    background-image: url(./gif/pikachu.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
     display: block;
     flex-direction: column;
-    padding-top: 200px;
+    padding-top: 125px;
     text-align: center;
     color:floralwhite;
 }
+
+
 .boxes{
     gap: 1px;
 }
@@ -61,20 +68,7 @@ body{
    background-color: rgb(125, 132, 75);
     cursor: pointer;
 }
-.user,.playerDetails{
-    display: flex;
-    flex-direction: row;
-   
-}
-.playerDetails{
-    padding: 10px;
-}
 
-p,.nameIn, .nameIn2, .roundIn, .roundIn2{
-    display: flex;
-    margin: 10px;
-  
-}
 .win{
     display: none;
     font-style: oblique;
@@ -91,7 +85,7 @@ p,.nameIn, .nameIn2, .roundIn, .roundIn2{
     
 }
 .reset,.roundSubmit, .roundSubmit2{
-    display: inline;
+    display: initial;
     width: 100px;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -105,10 +99,6 @@ p,.nameIn, .nameIn2, .roundIn, .roundIn2{
     background-color: rgba(86, 53, 18, 0.746);
 }
 
-.nameDisplay, .nameDisplay2,.round,.total, .round2, .total2{
-    margin: 5px;
-    
-}
 
 .player2Details{
     display: none;
@@ -135,8 +125,27 @@ p,.nameIn, .nameIn2, .roundIn, .roundIn2{
     display: none;
 }
 
+.logo{
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
 
 
 .roundSubmit2, .nameIn2, .player2Name{
     display: none;
+}
+
+.address{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.contact{
+    color: rgb(54, 54, 27);
+    text-decoration: none;
+    font-style: oblique;
+    font-weight: bold;
+    padding: 5px;
 }
