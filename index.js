@@ -23,6 +23,7 @@ const player2Name = document.querySelector(".player2Name")
 const player1Name = document.querySelector(".player1Name")
 const howMany = document.querySelector(".howMany")
 
+
 var result = [];
 var result2 = [];
 var count = [];
@@ -31,14 +32,14 @@ var count = [];
 console.log(count)
 function round(){
   playerName.innerHTML = `Player Name: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}`
-  document.querySelector(".round").innerHTML = `Select your round: ${roundIn.value}`
+  document.querySelector(".round").innerHTML = `Round: ${roundIn.value}`
   
 }
 
 function round2(){
   playerName2.innerHTML = `Player Name: ${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)}`
   roundIn2.value = `${roundIn.value}`
-  document.querySelector(".round2").innerHTML = `Select your round: ${roundIn2.value}`
+  document.querySelector(".round2").innerHTML = `Round: ${roundIn2.value}`
 }
 
 function boxes(){ 
@@ -481,17 +482,19 @@ function boxes(){
    }
 
    function resetTable(){
-    document.querySelector(".reset").style.display = "none"
+    const final = result.reduce((acc, curr)=> acc + curr, 0);
+    document.querySelector(".reset").style.display = "none";
+    document.querySelector(".heading").innerHTML =`Find the green box and Player1: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}, score: ${final} to beat. Good luck Player2!!`
     roundIn.style.display = "none";
     nameIn.style.display = "none";
     player1Name.style.display = "none";
     roundSubmit.style.display = "none"
-    // roundIn2.style.display = "flex";
+    roundIn2.style.display = "inline";
+
     nameIn2.style.display = "flex";
     roundSubmit2.style.display = "flex"
     player2Name.style.display = "flex";
     howMany.style.display = "none"
-    
     btn1.style.backgroundColor = `black`
     btn1.disabled = false; 
     btn2.style.backgroundColor = `black`
