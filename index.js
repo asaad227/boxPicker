@@ -42,8 +42,8 @@ function round2(){
 }
 
 function boxes(){ 
-  const num = roundIn.value - 1;
-  const num2 = roundIn2.value - 1;
+  const num = roundIn.value;
+  const num2 = roundIn2.value;
   if(num > num2){
     if(count.length >= num){
 
@@ -89,8 +89,8 @@ function boxes(){
     }
 
     function boxes2(){ 
-      const num = roundIn.value - 1;
-      const num2 = roundIn2.value - 1;
+      const num = roundIn.value;
+      const num2 = roundIn2.value;
       if(num > num2){
         if(count.length >= num){
        
@@ -136,8 +136,8 @@ function boxes(){
         }
 
         function boxes3(){ 
-          const num = roundIn.value - 1;
-          const num2 = roundIn2.value - 1;
+          const num = roundIn.value;
+          const num2 = roundIn2.value;
           if(num > num2){
             if(count.length >= num){
            
@@ -183,8 +183,8 @@ function boxes(){
             }
 
             function boxes4(){ 
-              const num = roundIn.value - 1;
-              const num2 = roundIn2.value - 1;
+              const num = roundIn.value;
+              const num2 = roundIn2.value;
               if(num > num2){
                 if(count.length >= num){
             
@@ -230,8 +230,8 @@ function boxes(){
                 }
 
                 function boxes5(){ 
-                  const num = roundIn.value - 1;
-                  const num2 = roundIn2.value - 1;
+                  const num = roundIn.value ;
+                  const num2 = roundIn2.value ;
                   if(num > num2){
                     if(count.length >= num){
                
@@ -277,8 +277,8 @@ function boxes(){
                     }
 
                     function boxes6(){ 
-                      const num = roundIn.value - 1;
-                      const num2 = roundIn2.value - 1;
+                      const num = roundIn.value ;
+                      const num2 = roundIn2.value;
                       if(num > num2){
                         if(count.length >= num){
                     
@@ -324,8 +324,8 @@ function boxes(){
                         }
 
                         function boxes7(){ 
-                          const num = roundIn.value - 1;
-                          const num2 = roundIn2.value - 1;
+                          const num = roundIn.value ;
+                          const num2 = roundIn2.value ;
                           if(num > num2){
                             if(count.length >= num){
                        
@@ -371,8 +371,8 @@ function boxes(){
                             }
 
                             function boxes8(){ 
-                              const num = roundIn.value - 1;
-                              const num2 = roundIn2.value - 1;
+                              const num = roundIn.value ;
+                              const num2 = roundIn2.value ;
                               if(num > num2){
                                 if(count.length >= num){
                                
@@ -418,8 +418,8 @@ function boxes(){
                                 }
 
                                 function boxes9(){ 
-                                  const num = roundIn.value - 1;
-                                  const num2 = roundIn2.value - 1;
+                                  const num = roundIn.value ;
+                                  const num2 = roundIn2.value ;
                                   if(num > num2){
                                     if(count.length >= num){
                                  
@@ -530,13 +530,13 @@ function winner(){
 }
    const reset = document.querySelector(".reset")
    const dataStore = document.querySelector(".dataStore");
-   const reload = document.querySelector(".reload")
+   
 
    dataStore.addEventListener("click", store);
    reset.addEventListener("click", resetTable);
 
 roundSubmit.addEventListener("click", round)
-reload.addEventListener("click", gameReload)
+
 roundSubmit2.addEventListener("click", round2)
 btn1.addEventListener("click", boxes)
 btn2.addEventListener("click", boxes2)
