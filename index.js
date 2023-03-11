@@ -481,6 +481,7 @@ function boxes(){
    }
 
    function resetTable(){
+    document.querySelector(".reset").style.display = "none"
     roundIn.style.display = "none";
     nameIn.style.display = "none";
     player1Name.style.display = "none";
@@ -514,21 +515,7 @@ function boxes(){
     
    }
 function winner(){
-  resetTable()
-  roundIn.style.display = "flex";
-  roundIn.value = ""
-  nameIn.style.display = "flex";
-  nameIn.value = ""
-  player1Name.style.display = "flex";
-  roundSubmit.style.display = "flex"
-  nameIn2.style.display = "none";
-  roundSubmit2.style.display = "none"
-  player2Name.style.display = "none";
-  howMany.style.display = "flex"
-  if(result.length === result2.length){
-    alert(win.innerHTML = "Winner: Game draw")
-  }
-
+  
   if(result.length > result2.length){
     alert(win.innerHTML = `Winner 🏆: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}`)
   }
@@ -536,13 +523,10 @@ function winner(){
   if(result2.length > result.length){
     alert(win.innerHTML = `Winner 🏆: ${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)}`)
   }
+  if(result.length === result2.length){
+    alert(win.innerHTML = "Winner: Game draw")
+  }
 
-  // playerName.innerHTML = "Player Name:";
-  // playerName2.innerHTML = "Player Name:";
-  // document.querySelector(".round").innerHTML = "Select your round:";
-  // document.querySelector(".round2").innerHTML = "Select your round:";
-  // show.innerHTML = "Score:";
-  // document.querySelector(".total2").innerHTML = "Score: ";
 }
    const reset = document.querySelector(".reset")
    const dataStore = document.querySelector(".dataStore");

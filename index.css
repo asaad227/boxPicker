@@ -25,9 +25,11 @@ body{
 }
 
 p,.nameIn, .nameIn2, .roundIn, .roundIn2{
+    display: flex;
     margin: 10px;
 }
 .roundSubmit, .roundSubmit2{
+    display: flex;
     margin-left: 10px;
 }
 
@@ -36,7 +38,7 @@ p,.nameIn, .nameIn2, .roundIn, .roundIn2{
 }
 
 
-.reload,.reset,.dataStore{
+.reload,.dataStore{
     width: 100px;
     height: 50px;
     border: none;
@@ -50,6 +52,13 @@ p,.nameIn, .nameIn2, .roundIn, .roundIn2{
 
 .roundIn2{
     display: none;
+}
+
+.reset{
+    display: inline;
+    margin: 10px;
+    background-color: brown;
+    color: beige;
 }
 
 .roundSubmit2, .nameIn2, .player2Name{
