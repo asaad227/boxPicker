@@ -489,7 +489,7 @@ function boxes(){
     nameIn.style.display = "none";
     player1Name.style.display = "none";
     roundSubmit.style.display = "none"
-    roundIn2.style.display = "inline";
+    // roundIn2.style.display = "inline";
 
     nameIn2.style.display = "flex";
     roundSubmit2.style.display = "flex"
@@ -521,13 +521,16 @@ function winner(){
   
   if(result.length > result2.length){
     alert(win.innerHTML = `Winner 🏆: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}`)
+  document.querySelector(".heading").innerHTML =`${nameIn2.value[0].toUpperCase()+nameIn.value.slice(1)} better luck next time!!!`
   }
 
   if(result.length < result2.length){
     alert(win.innerHTML = `Winner 🏆: ${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)}`)
+    document.querySelector(".heading").innerHTML =`${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)} better luck next time!!!`
   }
   if(result.length === result2.length){
     alert(win.innerHTML = "Winner: Game draw")
+    document.querySelector(".heading").innerHTML =`Reload the game and try again!!!`
   }
 
 }
