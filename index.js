@@ -531,7 +531,7 @@ function winner(){
     document.querySelector(".endBtn").style.marginTop = "150px"
   }
   if(result.length === result2.length){
-    alert(win.innerHTML = "Winner: Game draw")
+    alert(win.innerHTML = "Game draw")
     document.querySelector(".heading").innerHTML =`Reload the game and try again!!!`
     document.querySelector(".endBtn").style.marginTop = "150px"
   }
