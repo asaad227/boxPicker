@@ -535,7 +535,13 @@ function winner(){
     alert(win.innerHTML = "Winner: Game draw")
     document.querySelector(".heading").innerHTML =`Reload the game and try again!!!`
   }
-  win.style.display = "inline"
+  win.style.display = "inline";
+  document.querySelector(".user").style.display = "none";
+  document.querySelector(".playerDetails").style.display = "none";
+  document.querySelector(".divBox").style.display = "none";
+  //rather then calling individual elements change the className
+  document.querySelector(".mainDiv").className = "mainDiv2"
+
 }
    const reset = document.querySelector(".reset")
    const dataStore = document.querySelector(".dataStore");

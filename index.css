@@ -5,6 +5,14 @@ body{
     display: block;
     flex-direction: column;
 }
+
+.mainDiv2{
+    display: block;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 200px;
+    text-align: center;
+}
 .boxes{
     gap: 1px;
 }
@@ -38,6 +46,7 @@ p,.nameIn, .nameIn2, .roundIn, .roundIn2{
 }
 .win{
     display: none;
+    font-style: oblique;
 }
 .nameIn, .nameIn2, .roundIn{
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
