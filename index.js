@@ -1,13 +1,13 @@
 
-const btn1 = document.querySelector("#box1")
-const btn2 = document.querySelector("#box2")
-const btn3 = document.querySelector("#box3")
-const btn4 = document.querySelector("#box4")
-const btn5 = document.querySelector("#box5")
-const btn6 = document.querySelector("#box6")
-const btn7 = document.querySelector("#box7")
-const btn8 = document.querySelector("#box8")
-const btn9 = document.querySelector("#box9")
+const btn1 = document.querySelector(".box1")
+const btn2 = document.querySelector(".box2")
+const btn3 = document.querySelector(".box3")
+const btn4 = document.querySelector(".box4")
+const btn5 = document.querySelector(".box5")
+const btn6 = document.querySelector(".box6")
+const btn7 = document.querySelector(".box7")
+const btn8 = document.querySelector(".box8")
+const btn9 = document.querySelector(".box9")
 const show = document.querySelector(".total");
 const roundIn = document.querySelector(".roundIn");
 const roundSubmit = document.querySelector(".roundSubmit");
@@ -22,6 +22,7 @@ const win = document.querySelector(".win");
 const player2Name = document.querySelector(".player2Name")
 const player1Name = document.querySelector(".player1Name")
 const howMany = document.querySelector(".howMany")
+const abra = document.querySelector(".abra");
 
 
 var result = [];
@@ -47,8 +48,6 @@ function boxes(){
   const num2 = roundIn2.value;
   if(num > num2){
     if(count.length >= num){
-
-      const final = result.reduce((acc, curr)=> acc + curr, 0);
       alert(show.innerHTML = `Please reset boxes for player2`)
         }else{
           count.push(1)
@@ -56,9 +55,9 @@ function boxes(){
           const randomClass = Math.floor(Math.random()*4)
           if(randomBox === randomClass){
            result.push(10)
-           btn1.style.backgroundColor = "green"
+           btn1.className = "boxG"
           }else{
-            btn1.style.backgroundColor = "gold"
+            btn1.className = "boxP"
           }
          
         } 
@@ -75,9 +74,9 @@ function boxes(){
           const randomClass = Math.floor(Math.random()*4)
           if(randomBox === randomClass){
            result2.push(10)
-           btn1.style.backgroundColor = "green"
+           btn1.className = "boxG"
           }else{
-            btn1.style.backgroundColor = "gold"
+            btn1.className = "boxP"
           }
          
         } 
@@ -94,8 +93,6 @@ function boxes(){
       const num2 = roundIn2.value;
       if(num > num2){
         if(count.length >= num){
-       
-          const final = result.reduce((acc, curr)=> acc + curr, 0);
           alert(show.innerHTML = `Please reset boxes for player2`)
             }else{
               count.push(1)
@@ -103,9 +100,9 @@ function boxes(){
               const randomClass = Math.floor(Math.random()*4)
               if(randomBox === randomClass){
                result.push(10)
-               btn2.style.backgroundColor = "green"
+               btn2.className = "boxG"
               }else{
-                btn2.style.backgroundColor = "gold"
+                btn2.className = "boxP"
               }
              
             } 
@@ -122,9 +119,9 @@ function boxes(){
               const randomClass = Math.floor(Math.random()*4)
               if(randomBox === randomClass){
                result2.push(10)
-               btn2.style.backgroundColor = "green"
+               btn2.className = "boxG"
               }else{
-                btn2.style.backgroundColor = "gold"
+                btn2.className = "boxP"
               }
              
             } 
@@ -150,9 +147,9 @@ function boxes(){
                   const randomClass = Math.floor(Math.random()*4)
                   if(randomBox === randomClass){
                    result.push(10)
-                   btn3.style.backgroundColor = "green"
+                   btn3.className = "boxG"
                   }else{
-                    btn3.style.backgroundColor = "gold"
+                    btn3.className = "boxP"
                   }
                  
                 } 
@@ -169,9 +166,9 @@ function boxes(){
                   const randomClass = Math.floor(Math.random()*4)
                   if(randomBox === randomClass){
                    result2.push(10)
-                   btn3.style.backgroundColor = "green"
-                  }else{
-                    btn3.style.backgroundColor = "gold"
+                   btn3.className = "boxG"
+              }else{
+                btn3.className = "boxP"
                   }
                  
                 } 
@@ -197,9 +194,9 @@ function boxes(){
                       const randomClass = Math.floor(Math.random()*4)
                       if(randomBox === randomClass){
                        result.push(10)
-                       btn4.style.backgroundColor = "green"
-                      }else{
-                        btn4.style.backgroundColor = "gold"
+                       btn4.className = "boxG"
+              }else{
+                btn4.className = "boxP"
                       }
                      
                     } 
@@ -216,9 +213,9 @@ function boxes(){
                       const randomClass = Math.floor(Math.random()*4)
                       if(randomBox === randomClass){
                        result2.push(10)
-                       btn4.style.backgroundColor = "green"
-                      }else{
-                        btn4.style.backgroundColor = "gold"
+                       btn4.className = "boxG"
+              }else{
+                btn4.className = "boxP"
                       }
                      
                     } 
@@ -244,9 +241,9 @@ function boxes(){
                           const randomClass = Math.floor(Math.random()*4)
                           if(randomBox === randomClass){
                            result.push(10)
-                           btn5.style.backgroundColor = "green"
-                          }else{
-                            btn5.style.backgroundColor = "gold"
+                           btn5.className = "boxG"
+              }else{
+                btn5.className = "boxP"
                           }
                          
                         } 
@@ -263,9 +260,9 @@ function boxes(){
                           const randomClass = Math.floor(Math.random()*4)
                           if(randomBox === randomClass){
                            result2.push(10)
-                           btn5.style.backgroundColor = "green"
-                          }else{
-                            btn5.style.backgroundColor = "gold"
+                           btn5.className = "boxG"
+              }else{
+                btn5.className = "boxP"
                           }
                          
                         } 
@@ -291,9 +288,9 @@ function boxes(){
                               const randomClass = Math.floor(Math.random()*4)
                               if(randomBox === randomClass){
                                result.push(10)
-                               btn6.style.backgroundColor = "green"
-                              }else{
-                                btn6.style.backgroundColor = "gold"
+                               btn6.className = "boxG"
+              }else{
+                btn6.className = "boxP"
                               }
                              
                             } 
@@ -310,9 +307,9 @@ function boxes(){
                               const randomClass = Math.floor(Math.random()*4)
                               if(randomBox === randomClass){
                                result2.push(10)
-                               btn6.style.backgroundColor = "green"
+                               btn6.className = "boxG"
                               }else{
-                                btn6.style.backgroundColor = "gold"
+                                btn6.className = "boxP"
                               }
                              
                             } 
@@ -338,9 +335,9 @@ function boxes(){
                                   const randomClass = Math.floor(Math.random()*4)
                                   if(randomBox === randomClass){
                                    result.push(10)
-                                   btn7.style.backgroundColor = "green"
-                                  }else{
-                                    btn7.style.backgroundColor = "gold"
+                                   btn7.className = "boxG"
+              }else{
+                btn7.className = "boxP"
                                   }
                                  
                                 } 
@@ -357,9 +354,9 @@ function boxes(){
                                   const randomClass = Math.floor(Math.random()*4)
                                   if(randomBox === randomClass){
                                    result2.push(10)
-                                   btn7.style.backgroundColor = "green"
+                                   btn7.className = "boxG"
                                   }else{
-                                    btn7.style.backgroundColor = "gold"
+                                    btn7.className = "boxP"
                                   }
                                  
                                 } 
@@ -385,9 +382,9 @@ function boxes(){
                                       const randomClass = Math.floor(Math.random()*4)
                                       if(randomBox === randomClass){
                                        result.push(10)
-                                       btn8.style.backgroundColor = "green"
+                                       btn8.className = "boxG"
                                       }else{
-                                        btn8.style.backgroundColor = "gold"
+                                        btn8.className = "boxP"
                                       }
                                      
                                     } 
@@ -404,9 +401,9 @@ function boxes(){
                                       const randomClass = Math.floor(Math.random()*4)
                                       if(randomBox === randomClass){
                                        result2.push(10)
-                                       btn8.style.backgroundColor = "green"
-                                      }else{
-                                        btn8.style.backgroundColor = "gold"
+                                       btn8.className = "boxG"
+              }else{
+                btn8.className = "boxP"
                                       }
                                      
                                     } 
@@ -432,9 +429,9 @@ function boxes(){
                                           const randomClass = Math.floor(Math.random()*4)
                                           if(randomBox === randomClass){
                                            result.push(10)
-                                           btn9.style.backgroundColor = "green"
+                                           btn9.className = "boxG"
                                           }else{
-                                            btn9.style.backgroundColor = "gold"
+                                            btn9.className = "boxP"
                                           }
                                          
                                         } 
@@ -452,9 +449,9 @@ function boxes(){
                                           const randomClass = Math.floor(Math.random()*4)
                                           if(randomBox === randomClass){
                                            result2.push(10)
-                                           btn9.style.backgroundColor = "green"
+                                           btn9.className = "boxG"
                                           }else{
-                                            btn9.style.backgroundColor = "gold"
+                                            btn9.className = "boxP"
                                           }
                                          
                                         } 
@@ -487,7 +484,7 @@ function boxes(){
     document.querySelector(".player2Details").style.display = "initial";
     document.querySelector(".player1Details").style.display = "none";
     document.querySelector(".reset").style.display = "none";
-    document.querySelector(".heading").innerHTML =`Find the green box and Player1: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}, score: ${final} to beat. Good luck Player2!!`
+    document.querySelector(".heading").innerHTML =`Score: ${final} to beat. Good luck Player2!!`
     roundIn.style.display = "none";
     nameIn.style.display = "none";
     player1Name.style.display = "none";
@@ -498,23 +495,23 @@ function boxes(){
     roundSubmit2.style.display = "inline"
     player2Name.style.display = "flex";
     howMany.style.display = "none"
-    btn1.style.backgroundColor = `black`
+    btn1.className = "box1"
     btn1.disabled = false; 
-    btn2.style.backgroundColor = `black`
+    btn2.className = "box2"
     btn2.disabled = false; 
-    btn3.style.backgroundColor = `black`
+    btn3.className = "box3"
     btn3.disabled = false; 
-    btn4.style.backgroundColor = `black`
+    btn4.className = "box4"
     btn4.disabled = false; 
-    btn5.style.backgroundColor = `black`
+    btn5.className = "box5"
     btn5.disabled = false; 
-    btn6.style.backgroundColor = `black`
+    btn6.className = "box6"
     btn6.disabled = false; 
-    btn7.style.backgroundColor = `black`
+    btn7.className = "box7"
     btn7.disabled = false; 
-    btn8.style.backgroundColor = `black`
+    btn8.className = "box8"
     btn8.disabled = false; 
-    btn9.style.backgroundColor = `black`
+    btn9.className = "box9"
     btn9.disabled = false;
     count.length = 0; 
 
