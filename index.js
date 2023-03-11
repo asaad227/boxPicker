@@ -395,7 +395,7 @@ function boxes(){
                                    const final = result.reduce((acc, curr)=> acc + curr, 0);
                                    show.innerHTML = `Score: ${final}` 
                               }else{
-                                if(count.length > num2 ){
+                                if(count.length >= num2 ){
                                  winner()
                                     }else{
                                       count.push(1)
