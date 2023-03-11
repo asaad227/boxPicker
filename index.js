@@ -540,7 +540,8 @@ function winner(){
   document.querySelector(".playerDetails").style.display = "none";
   document.querySelector(".divBox").style.display = "none";
   //rather then calling individual elements change the className
-  document.querySelector(".mainDiv").className = "mainDiv2"
+  document.querySelector(".mainDiv").className = "mainDiv2";
+  document.querySelector("body").style.backgroundColor ="cadetblue"
 
 }
    const reset = document.querySelector(".reset")

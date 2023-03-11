@@ -9,9 +9,9 @@ body{
 .mainDiv2{
     display: block;
     flex-direction: column;
-    padding-left: 50px;
     padding-top: 200px;
     text-align: center;
+    color:floralwhite;
 }
 .boxes{
     gap: 1px;
