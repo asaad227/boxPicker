@@ -45,7 +45,7 @@ function boxes(){
   const num = roundIn.value - 1;
   const num2 = roundIn2.value - 1;
   if(num > num2){
-    if(count.length > num){
+    if(count.length >= num){
 
       const final = result.reduce((acc, curr)=> acc + curr, 0);
       alert(show.innerHTML = `Please reset boxes for player2`)
@@ -66,7 +66,7 @@ function boxes(){
        const final = result.reduce((acc, curr)=> acc + curr, 0);
        show.innerHTML = `Score: ${final}` 
   }else{
-    if(count.length > num2 ){
+    if(count.length >= num2 ){
       winner()
         }else{
           count.push(1)
@@ -92,7 +92,7 @@ function boxes(){
       const num = roundIn.value - 1;
       const num2 = roundIn2.value - 1;
       if(num > num2){
-        if(count.length > num){
+        if(count.length >= num){
        
           const final = result.reduce((acc, curr)=> acc + curr, 0);
           alert(show.innerHTML = `Please reset boxes for player2`)
@@ -113,7 +113,7 @@ function boxes(){
            const final = result.reduce((acc, curr)=> acc + curr, 0);
            show.innerHTML = `Score: ${final}` 
       }else{
-        if(count.length > num2 ){
+        if(count.length >= num2 ){
           winner()
             }else{
               count.push(1)
@@ -139,7 +139,7 @@ function boxes(){
           const num = roundIn.value - 1;
           const num2 = roundIn2.value - 1;
           if(num > num2){
-            if(count.length > num){
+            if(count.length >= num){
            
               const final = result.reduce((acc, curr)=> acc + curr, 0);
               alert(show.innerHTML = `Please reset boxes for player2`)
@@ -160,7 +160,7 @@ function boxes(){
                const final = result.reduce((acc, curr)=> acc + curr, 0);
                show.innerHTML = `Score: ${final}` 
           }else{
-            if(count.length > num2 ){
+            if(count.length >= num2 ){
             winner()
                 }else{
                   count.push(1)
@@ -186,7 +186,7 @@ function boxes(){
               const num = roundIn.value - 1;
               const num2 = roundIn2.value - 1;
               if(num > num2){
-                if(count.length > num){
+                if(count.length >= num){
             
                   const final = result.reduce((acc, curr)=> acc + curr, 0);
                   alert(show.innerHTML = `Please reset boxes for player2`)
@@ -207,7 +207,7 @@ function boxes(){
                    const final = result.reduce((acc, curr)=> acc + curr, 0);
                    show.innerHTML = `Score: ${final}` 
               }else{
-                if(count.length > num2 ){
+                if(count.length >= num2 ){
                  winner()
                     }else{
                       count.push(1)
@@ -233,7 +233,7 @@ function boxes(){
                   const num = roundIn.value - 1;
                   const num2 = roundIn2.value - 1;
                   if(num > num2){
-                    if(count.length > num){
+                    if(count.length >= num){
                
                       const final = result.reduce((acc, curr)=> acc + curr, 0);
                       alert(show.innerHTML = `Please reset boxes for player2`)
@@ -254,7 +254,7 @@ function boxes(){
                        const final = result.reduce((acc, curr)=> acc + curr, 0);
                        show.innerHTML = `Score: ${final}` 
                   }else{
-                    if(count.length > num2 ){
+                    if(count.length >= num2 ){
                       winner()
                         }else{
                           count.push(1)
@@ -280,7 +280,7 @@ function boxes(){
                       const num = roundIn.value - 1;
                       const num2 = roundIn2.value - 1;
                       if(num > num2){
-                        if(count.length > num){
+                        if(count.length >= num){
                     
                           const final = result.reduce((acc, curr)=> acc + curr, 0);
                           alert(show.innerHTML = `Please reset boxes for player2`)
@@ -301,7 +301,7 @@ function boxes(){
                            const final = result.reduce((acc, curr)=> acc + curr, 0);
                            show.innerHTML = `Score: ${final}` 
                       }else{
-                        if(count.length > num2 ){
+                        if(count.length >= num2 ){
                           winner()
                             }else{
                               count.push(1)
@@ -327,7 +327,7 @@ function boxes(){
                           const num = roundIn.value - 1;
                           const num2 = roundIn2.value - 1;
                           if(num > num2){
-                            if(count.length > num){
+                            if(count.length >= num){
                        
                               const final = result.reduce((acc, curr)=> acc + curr, 0);
                               alert(show.innerHTML = `Please reset boxes for player2`)
@@ -348,7 +348,7 @@ function boxes(){
                                const final = result.reduce((acc, curr)=> acc + curr, 0);
                                show.innerHTML = `Score: ${final}` 
                           }else{
-                            if(count.length > num2 ){
+                            if(count.length >= num2 ){
                              winner()
                                 }else{
                                   count.push(1)
@@ -374,7 +374,7 @@ function boxes(){
                               const num = roundIn.value - 1;
                               const num2 = roundIn2.value - 1;
                               if(num > num2){
-                                if(count.length > num){
+                                if(count.length >= num){
                                
                                   const final = result.reduce((acc, curr)=> acc + curr, 0);
                                   alert(show.innerHTML = `Please reset boxes for player2`)
@@ -421,7 +421,7 @@ function boxes(){
                                   const num = roundIn.value - 1;
                                   const num2 = roundIn2.value - 1;
                                   if(num > num2){
-                                    if(count.length > num){
+                                    if(count.length >= num){
                                  
                                       const final = result.reduce((acc, curr)=> acc + curr, 0);
                                       alert(show.innerHTML = `Please reset boxes for player2`)
@@ -442,7 +442,7 @@ function boxes(){
                                        const final = result.reduce((acc, curr)=> acc + curr, 0);
                                        show.innerHTML = `Score: ${final}` 
                                   }else{
-                                    if(count.length > num2 ){
+                                    if(count.length >= num2 ){
                                       winner()
                                       
                                         }else{
@@ -520,7 +520,7 @@ function winner(){
     alert(win.innerHTML = `Winner 🏆: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}`)
   }
 
-  if(result2.length > result.length){
+  if(result.length < result2.length){
     alert(win.innerHTML = `Winner 🏆: ${nameIn2.value[0].toUpperCase()+nameIn2.value.slice(1)}`)
   }
   if(result.length === result2.length){
@@ -530,12 +530,13 @@ function winner(){
 }
    const reset = document.querySelector(".reset")
    const dataStore = document.querySelector(".dataStore");
+   const reload = document.querySelector(".reload")
 
    dataStore.addEventListener("click", store);
    reset.addEventListener("click", resetTable);
 
 roundSubmit.addEventListener("click", round)
-
+reload.addEventListener("click", gameReload)
 roundSubmit2.addEventListener("click", round2)
 btn1.addEventListener("click", boxes)
 btn2.addEventListener("click", boxes2)
