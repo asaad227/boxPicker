@@ -31,6 +31,12 @@ var count = [];
 
 
 console.log(count)
+function roundCount(){
+  console.log(roundIn.value)
+  document.querySelector(".round").innerHTML = `Round: ${roundIn.value}`
+}
+
+
 function round(){
   playerName.innerHTML = `Player Name: ${nameIn.value[0].toUpperCase()+nameIn.value.slice(1)}`
   document.querySelector(".round").innerHTML = `Round: ${roundIn.value}`

@@ -2,11 +2,18 @@ body{
     background-color: darkgrey;
 }
 .mainDiv{
-    display: initial;
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   
 }
-
+.part1, .part2, .part3{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 150px;
+}
 .mainDiv2{
     background-image: url(./gif/pikachu.gif);
     background-repeat: no-repeat;
@@ -14,7 +21,7 @@ body{
     background-size: 100px;
     display: block;
     flex-direction: column;
-    padding-top: 125px;
+    padding-top: 20px;
     text-align: center;
     color:floralwhite;
 }
@@ -98,10 +105,13 @@ body{
 .reset{
     background-color: rgba(86, 53, 18, 0.746);
 }
-
+.player1Details{
+    margin-right: 200px;
+}
 
 .player2Details{
     display: none;
+    margin-right: 325px;
 }
 
 
@@ -124,6 +134,17 @@ body{
 .roundIn2{
     display: none;
 }
+
+.round, .total, .total2{
+    padding: 5px;
+    width: 100px;
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+
+
+
+
 
 .logo{
     border-radius: 5px;

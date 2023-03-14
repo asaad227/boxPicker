@@ -9,42 +9,43 @@
 </head>
 <body>
     <div class="mainDiv">
-    <div>
+   
         <h3 class="win">Winner: </h3>
         <h3 class="heading">Find Abra <img class="abra" src="./gif/abra_pokemon.gif"/> pokemon to get point, dont forget to select your round.</h3>
         <div class="user">
-            <div>
+            <div class="part1">
             <p class="player1Name">Player1 enter your name:</p>
             <input type="text" class="nameIn"/>
             <p class="howMany">How many round?</p>
-            <input type="number" min="1" max="7" class="roundIn"/>
+            <input type="range" min="1" max="7" step="1" class="roundIn" onchange="roundCount()"/>
+            </div>
+            <div class="part2">
             <button type="submit" class="roundSubmit">Play</button>
             <button class="reset">Reset boxes</button>
-        </div>
-        <div>
+            </div>
+            <div class="part3">
             <p class="player2Name">Player2 enter your name:</p>
             <input type="text" class="nameIn2"/>
             <input type="number" min="1" max="7" class="roundIn2"/>
             <button type="submit" class="roundSubmit2">Play</button>
         </div>
-        </div>
-        <div class="playerDetails">
-        <div class="player1Details">
-            <h4 class="nameDisplay"> Player Name: </h4>
-            <h4 class="round">Round: </h4>
-            <h4 class="total">Score: </h4>
-        </div>
-        <div class="player2Details">
-            <h4 class="nameDisplay2"> Player Name: </h4>
-            <h4 class="round2">Round: </h4>
-            <h4 class="total2">Score: </h4>
-        </div>
-    </div>
-        
-        
-        
-       
-    </div>
+            </div>
+            
+      <div class="playerDetails">
+      <div class="player1Details">
+        <h4 class="nameDisplay"> Player Name: </h4>
+            <h4 class="round">Round: 4 </h4>
+            <h4 class="total">Score: 0 </h4>
+      </div>
+            
+    
+     <div class="player2Details">
+        <h4 class="nameDisplay2"> Player Name: </h4>
+            <h4 class="round2">Round: 4</h4>
+            <h4 class="total2">Score: 0 </h4>
+     </div>
+    </div>     
+   
     <div class="divBox">
         <div class="boxes">
             <button class="box1"></button>
@@ -62,18 +63,18 @@
             <button class="box9"></button>
         </div>
     </div>
-   
-<div class="endBtn">
     
+<div class="endBtn">
     <button class="dataStore" >Data Store</button>
     <button class="reload" onclick="location.reload()">Reload</button>
 </div>
+</div> 
 <footer>
     <div class="container">
+        <p>Copyright © 2023 BoxPicker.</p>
         
       <ul>
-        <li><img class="logo" src="./gif/logo.gif"/></li>
-        <li>Copyright © 2023 BoxPicker. All rights reserved.</li>
+        <li>All rights reserved.</li>
         <li><a href="#">Terms of Use</a></li>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="https://github.com/asaad227">GitHub</a></li>
@@ -82,11 +83,7 @@
       </ul>
     </div>
   </footer>
-  
-
-</div>
-   
-    
+ 
 </body>
 <script src="./index.js"></script>
 </html>
